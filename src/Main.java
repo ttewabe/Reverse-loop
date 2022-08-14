@@ -10,18 +10,13 @@ public class Main {
             System.out.println("Hello world!" + i);
             i--;
         } */
-    // To quit something in while loop just use this
-        Scanner scanner = new Scanner(System.in);
+        // For each loop and for loop
+        String[] fruits ={"Apple", " mango", "Banana"};
 
-        String input = "";
-                while (!input.equals("quit")) {
-                    System.out.println("Input: ");
-                    input = scanner.next().toLowerCase();
-                    if (input.equals("pass"))
-                        continue;
-                        if (input.equals("quit"))
-                            break;
-                    System.out.println(input);
-                }
+    /*    for (int i = 0; i < fruits.length; i++) ;
+        System.out.println(fruits[i]); */
+// Another way to write this code
+        for (String fruit : fruits);
+        System.out.println(fruits);
     }
 }
